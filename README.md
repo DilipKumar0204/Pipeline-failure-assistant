@@ -1,4 +1,3 @@
-
 # Pipeline Failure Assistant
 
 When a pipeline fails, the usual process is — check the logs, dig through old tickets, try to remember if this happened before, guess a fix, try again. That loop can take hours.
@@ -16,6 +15,8 @@ Say your pipeline fails at 2am. The error is vague. You don't remember if you've
 This tool surfaces that. It doesn't just say "here's the error" — it says:
 
 > *"This same DB connection timeout occurred on March 3rd. The fix was increasing the pool size from 10 to 25 in services.yaml. Here's the exact block that was changed."*
+
+And if it's a brand new issue you've never seen before, it still helps — it searches your configs and logs for related context, reasons about the failure, and suggests a fix based on what it finds. You're not on your own either way.
 
 That's the difference between a 3-hour debug session and a 10-minute fix.
 
