@@ -4,7 +4,7 @@ When a pipeline fails, the usual process is — check the logs, dig through old 
 
 I built this to short-circuit that loop.
 
-It plugs into the end of your pipeline. When something breaks, it pulls the failure context, searches through your historical logs and config files, and tells you what the issue is, whether it's happened before, and what fix was applied last time.
+It plugs into the end of your pipeline. When something breaks, it pulls the failure context, searches through your historical logs and config files, and tells you what the issue is — whether it's a recurring one with a known fix, or a brand new bug it's seeing for the first time.
 
 ---
 
